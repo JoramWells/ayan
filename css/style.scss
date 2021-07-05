@@ -9,7 +9,7 @@ body {
 }
 .header {
   text-align: center;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(0, 0, 0,0.1);
   color: white;
   background-image: url("../img/background_img.jpg");
   background-size: cover;
@@ -29,38 +29,78 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   padding: 1.3rem;
-//   background-color: rgb(0, 0, 0);
+  //   background-color: rgb(0, 0, 0);
   color: white;
   position: fixed;
   width: 100%;
   left: 0;
   top: 0;
   border-bottom: 0.1rem solid white;
+  transition: all 0.5s;
 }
 .navbar.active {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     padding: 1.3rem;
-    background-color: rgb(255,255,255);
+      background-color: white;
     color: white;
     position: fixed;
     width: 100%;
     left: 0;
     top: 0;
     border-bottom: 0.1rem solid white;
-  }
-.menu {
+    transition: all 0.5s;
+}
+.nav-item {
   display: flex;
   flex-direction: row;
-  width: 25%;
-  justify-content: space-between;
-  background-color: rgb(0, 0, 0);
+  width: 100%;
+  justify-content: space-around;
+  //   background-color: rgb(0, 0, 0);
+  width: 30%;
   color: white;
 }
+.nav-item.active {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    //   background-color: rgb(0, 0, 0);
+    width: 30%;
+    color: black;
+  }
+
+  .primary{
+    background-color: transparent;
+    margin-top: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: .9rem;
+    padding-bottom: .9rem;
+    display: block;
+    border: 2px solid white;
+    border-radius: 100px;
+    color: white;
+    font-size: 1rem;
+
+  }
+  .primary:hover{
+    cursor: pointer;
+  }
+  .primary:active{
+    outline: none;
+  }
+
+  .wrapper{
+    position: absolute;
+    display: flex;
+    background-color: red;
+  }
+
 .services {
   height: 500px;
   color: white;
