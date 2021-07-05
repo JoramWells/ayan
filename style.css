@@ -1,0 +1,142 @@
+*{
+    border: 0;
+    /* background-color: whitesmoke; */
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.header{
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    background-image: url('background_img.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 0;
+}
+
+.header-content{
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 1.3rem;
+    background-color: black;
+    color: white;
+    position: sticky;
+    top: 0;
+    border-bottom: .01rem solid white;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    width: 25%;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+}
+
+.services{
+    /* text-align: center; */
+    height: 500px;
+    color: white;
+    padding: 2rem;
+}
+.services div{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card{
+    border: 1px solid #D8D8D8;
+    display: flex;
+    /* flex-direction: column;
+    justify-content: center; */
+    align-items: center;
+    /* flex-wrap: wrap; */
+    padding: 1.5rem;
+    margin: 1rem;
+    border-radius: 10px;
+    width: 20rem;
+}
+.card p{
+    color: gray;
+}
+button{
+    background-color: rgb(53, 106, 219);
+    padding: .5rem;
+    border-radius: 2px;
+}
+a{
+    background-color: transparent;
+    color: white;
+}
+
+.team{
+    height: 500px;
+    text-align: center;
+    padding: 2rem;
+}
+.team p{
+    color: gray;
+}
+.avatar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 1.5rem;
+}
+.avatar-item{
+    border-radius: 200px;
+    margin-top: 2rem;
+    background-color: gray;
+    width: 8rem;
+    height: 8rem;
+    margin-bottom: .7rem;
+}
+.avatar-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.clients{
+    height: 400px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+footer{
+    height: 500px;
+    background-color: rgb(40, 44, 53);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer div{
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+}
