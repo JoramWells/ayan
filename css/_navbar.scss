@@ -1,12 +1,17 @@
+@mixin flex($direction,$justify) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+
+}
+
 .navbar {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1.3rem;
-    background-color: rgb(0, 0, 0);
-    color: white;
-    width: 100%;
-    border-bottom: 0.1rem solid white;
-    transition: all 0.5s;
-  }
+  @include flex(row, space-between);
+  align-items: center;
+  padding: 1.3rem;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  width: 100%;
+  // border-bottom: 0.1rem solid gray;
+  transition: all 0.5s;
+}
